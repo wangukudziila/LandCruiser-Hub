@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandCruiser-Hub | Contact</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LandCruiser-Hub | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#models">Models</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#fqa">FQA</a></li>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="models.html">Models</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact Section -->
-    <section id="contact">
+  <!-- Contact Section -->
+  <main>
+    <section id="contact" class="content-section">
+      <div class="container">
         <h1>Contact Us</h1>
         <p>We’d love to hear from you! Whether you have a question about a model, need help scheduling a test drive, 
-          or just want to learn more about LandCruiser, our team is ready to assist you.</p>
+        or just want to learn more about LandCruiser, our team is ready to assist you.</p>
 
         <h2>Our Contact Information</h2>
-        <p>Email: support@landcruiserhub.com</p>
+        <p>Email: <a href="mailto:support@landcruiserhub.com">support@landcruiserhub.com</a></p>
         <p>Phone: (123) 456-7890</p>
         <p>Address: 123 LandCruiser Lane, Adventure City</p>
-        
+
         <!-- Contact Form -->
-        <form action="submit_form.php" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form action="submit_form.php" method="POST" class="contact-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
 
-            <label for="subject">Subject:</label>
-            <select id="subject" name="subject">
-                <option value="general">General Inquiry</option>
-                <option value="model">Model Information</option>
-                <option value="test-drive">Test Drive Request</option>
-            </select>
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="model">Model Information</option>
+            <option value="test-drive">Test Drive Request</option>
+          </select>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </form>
+      </div>
     </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LandCruiser-Hub. All rights reserved.</p>
+      <p>This site is not affiliated with Toyota Motor Corporation.</p>
+    </div>
+  </footer>
 </body>
 </html>
- <footer>
-        <div class="container">
-            <p>&copy; 2025 LandCruiser Hub. All rights reserved.</p>
-            <p>This site is not affiliated with Toyota Motor Corporation.</p>
-        </div>
-    </footer>
-    
 
