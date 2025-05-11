@@ -28,33 +28,36 @@
     <section id="contact" class="content-section">
       <div class="container">
         <h1>Contact Us</h1>
-        <p>We’d love to hear from you! Whether you have a question about a model, need help scheduling a test drive, 
-        or just want to learn more about LandCruiser, our team is ready to assist you.</p>
+        <p> Have questions, suggestions or feedback?We’d love to hear from you, our team is always ready to assist you!!.</p>
 
         <h2>Our Contact Information</h2>
-        <p>Email: <a href="mailto:support@landcruiserhub.com">support@landcruiserhub.com</a></p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 LandCruiser Lane, Adventure City</p>
+        <p><strong>Email</strong>:<a href="mailto:support@landcruiserhub.com">wangukudziila@gmil.com</a></p>
+        <p><strong>Phone</strong>: (267) 72149273</p>
+       
 
         <!-- Contact Form -->
-        <form action="submit_form.php" method="POST" class="contact-form">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
+      <form action="#" method="post">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
 
-          <label for="subject">Subject:</label>
-          <select id="subject" name="subject">
-            <option value="general">General Inquiry</option>
-            <option value="model">Model Information</option>
-            <option value="test-drive">Test Drive Request</option>
-          </select>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject">
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="reason">Reason for Contact</label>
+    <select id="reason" name="reason">
+      <option value="general">General Inquiry</option>
+      <option value="suggestion">Content Suggestion</option>
+      <option value="collaboration">Collaboration</option>
+      <option value="issue">Report Issue</option>
+    </select>
+        <label for="message">Message *</label>
+    <textarea id="message" name="message" required></textarea>
 
-          <button type="submit">Submit</button>
+    <button type="submit">Send Message</button>
+  </form>
         </form>
       </div>
     </section>
