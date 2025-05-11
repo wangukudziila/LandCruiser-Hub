@@ -1,1 +1,121 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url('landcruiser-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.features h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.features p {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
 
