@@ -1,0 +1,35 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form from submitting right away
+
+      // Get input values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const reason = document.getElementById('reason').value;
+      const message = document.getElementById('message').value.trim();
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+
+      // Validation
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      if (!email.match(emailPattern)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Simulate form submission (e.g., send to server or external service)
+      alert('Thank you! Your message has been received.');
+
+      // Optional: Reset the form
+      form.reset();
+    });
+  });
+</script>
