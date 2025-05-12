@@ -8,14 +8,14 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #d9cbb1;
-  color: dusty tan;
+  background-color: #F4F4F4;
+  color: white smoke;
 }
 
 /* Navigation Bar */
 nav {
-  background-color: #2c3e50;
-  color: midnight blue-gray;
+  background-color: #3B5323;
+  color: Dark olive green;
   display: flex;
   justify-content: space-between;
   align-items: center;
