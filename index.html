@@ -26,6 +26,10 @@
     </div>
   </header>
  <main>
+     <form action="/search" method="GET" class="search-form">
+  <input type="text" name="q" placeholder="Search Land Cruiser topics..." required>
+  <button type="submit">Search</button>
+</form>
     <section class="hero">
       <div class="hero-content">
         <h2>Welcome to the Ultimate Land Cruiser Fan Site</h2>
@@ -63,5 +67,25 @@
             <p>This site is not affiliated with Toyota Motor Corporation.</p>
         </div>
     </footer>
+
+    <!-- HTML -->
+<form id="searchForm" class="search-form">
+  <input type="text" id="searchInput" placeholder="Search Land Cruiser topics..." required>
+  <button type="submit">Search</button>
+</form>
+
+<!-- JavaScript -->
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting traditionally
+    const query = document.getElementById('searchInput').value.trim();
+
+    if (query) {
+      // Redirect to your search results page with query parameter
+      window.location.href = `/search?q=${encodeURIComponent(query)}`;
+    }
+  });
+</script>
+
     
 
