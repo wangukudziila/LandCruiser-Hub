@@ -163,54 +163,64 @@ footer p {
     background-color: #1e4037;
   }
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f8f8f8;
-  }
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-  }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
 
-  h1, h2 {
-    color: #2c3e50;
-  }
+/* Headings */
+h1, h2, h3 {
+  color: #2c3e50;
+}
 
-  .two-column {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+/* Two Column Layout */
+.two-column {
+  display: flex;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px;
+}
 
-  .column {
-    flex: 1;
-    min-width: 300px;
-  }
+/* Individual Columns */
+.column {
+  flex: 1;
+  min-width: 300px; /* Ensures stacking on smaller screens */
+}
 
-  .section {
-    margin-bottom: 30px;
-  }
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+}
 
-  .model-box {
-    background: #ecf0f1;
-    padding: 15px;
-    margin: 10px 0;
-    border-left: 4px solid #2980b9;
-  }
+/* Box Style for Models */
+.model-box {
+  background: #ecf0f1;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #2980b9;
+  border-radius: 4px;
+}
 
-  ul {
-    padding-left: 20px;
-  }
+/* List Styling */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
 
-  a {
-    color: #2980b9;
-    text-decoration: none;
-  }
-</style>
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
