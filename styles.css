@@ -156,6 +156,7 @@ footer p {
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    position: relative;
   }
 
   .search-form button:hover {
