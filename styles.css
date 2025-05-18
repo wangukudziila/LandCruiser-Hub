@@ -14,8 +14,8 @@ body {
 
 /* Navigation Bar */
 nav {
-  background-color: #3B5323;
-  color: Dark olive green;
+  background-color: #556B2F;
+  color: olive green;
   display: flex;
   justify-content: space-between;
   align-items: center;
