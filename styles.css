@@ -8,8 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #F4F4F4;
-  color: white smoke;
+  background-color: #8B7D6B;
+  color: Tawny Brown;
 }
 
 /* Navigation Bar */
@@ -42,18 +42,6 @@ nav a {
 
 nav a:hover {
   color: #ffcc00;
-}
-/*whatsapp float*/
-  .whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-}
-
-.whatsapp-float img {
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
