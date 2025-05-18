@@ -23,13 +23,18 @@
       </nav>
     </div>
   </header>
+    
+<h2>Search Models</h2>
+<input type="text" id="searchBox" placeholder="Search models..." onkeyup="searchModels()">
 
-     <form action="/search" method="GET" class="search-form">
-  <input type="text" name="q" placeholder="Search Land Cruiser topics..." required>
-  <button type="submit">Search</button>
-</form>
-    <section class="hero">
-      <div class="hero-content">
+<ul id="modelList">
+  <li>Land Cruiser 75 Pickup</li>
+  <li>Land Cruiser 79 Double Cab</li>
+  <li>Land Cruiser 78 series</li>
+  <li>Land Cruiser Prado 120</li>
+  <li>Land Cruiser 300 Series</li>
+</ul>
+
         <h2>Welcome to the Ultimate Land Cruiser Fan Site</h2>
         <p class="welcome-msg">
           Your ultimate destination for all LandCruiser lovers
@@ -66,18 +71,22 @@
         </div>
     </footer>
 
-<!-- JavaScript -->
 <script>
-  document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting traditionally
-    const query = document.getElementById('searchInput').value.trim();
+function searchModels() {
+  const input = document.getElementById("searchBox").value.toLowerCase();
+  const items = document.querySelectorAll("#modelList li");
 
-    if (query) {
-      // Redirect to your search results page with query parameter
-      window.location.href = `/search?q=${encodeURIComponent(query)}`;
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    if (text.includes(input)) {
+      item.style.display = "list-item";
+    } else {
+      item.style.display = "none";
     }
   });
+}
 </script>
+
 
     
 
