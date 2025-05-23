@@ -127,30 +127,6 @@ footer p {
     margin-top: 30px;
   }
 
-  .search-form input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    outline: none;
-  }
-
-  .search-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #2e5b4e;
-    color: white;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .search-form button:hover {
-    background-color: #1e4037;
-  }
-
 
 /* Two Column Layout for tips and maintenace page */
 .two-column {
