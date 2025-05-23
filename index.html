@@ -24,16 +24,6 @@
     </div>
   </header>
     
-<h2>Search Models</h2>
-<input type="text" id="searchBox" placeholder="Search models..." onkeyup="searchModels()">
-
-<ul id="modelList">
-  <li>Land Cruiser 75 Pickup</li>
-  <li>Land Cruiser 79 Double Cab</li>
-  <li>Land Cruiser 78 series</li>
-  <li>Land Cruiser Prado 120</li>
-  <li>Land Cruiser 300 Series</li>
-</ul>
 
         <h2>Welcome to the Ultimate Land Cruiser Fan Site</h2>
         <p class="welcome-msg">
@@ -71,22 +61,8 @@
         </div>
     </footer>
 
-<script>
-function searchModels() {
-  const input = document.getElementById("searchBox").value.toLowerCase();
-  const items = document.querySelectorAll("#modelList li");
 
-  items.forEach(item => {
-    const text = item.textContent.toLowerCase();
-    if (text.includes(input)) {
-      item.style.display = "list-item";
-    } else {
-      item.style.display = "none";
-    }
-  });
-}
-</script>
-
+ 
 
     
 
