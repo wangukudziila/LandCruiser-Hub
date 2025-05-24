@@ -12,6 +12,10 @@ body {
   color: floral white;
 }
 
+h1,h2{
+  text align:center;
+}
+
 /* Navigation Bar */
 nav {
   background-color: #556B2F;
