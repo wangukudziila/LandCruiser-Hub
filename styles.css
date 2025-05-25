@@ -15,6 +15,11 @@ body {
 h2{
   text-align: center;
 }
+img {
+  display: block;
+  margin: 20px auto;
+}
+
 
 /* Navigation Bar */
 nav {
