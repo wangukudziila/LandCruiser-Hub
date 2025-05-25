@@ -23,7 +23,12 @@ img {
   margin: 20px 0;
    max-height: 300px;
 }
-
+ .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
 
 /* Navigation Bar */
 nav {
