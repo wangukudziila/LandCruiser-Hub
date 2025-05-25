@@ -21,8 +21,8 @@ img {
   height: auto; 
   display: block;
   margin: 20px 0;
+   max-height: 300px;
 }
-
 
 /* Navigation Bar */
 nav {
